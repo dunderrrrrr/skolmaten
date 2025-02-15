@@ -1,1 +1,0 @@
-from .skolmaten import SchoolFood

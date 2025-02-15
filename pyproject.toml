@@ -1,0 +1,23 @@
+[tool.poetry]
+authors = ["dunderrrrrr <emil.bjorkroth@gmail.com>"]
+description = "Fetch food menu information from skolmaten.se"
+name = "Skolmaten"
+readme = "README.md"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pre-commit = "^3.7.1"
+ruff = "^0.5.2"
+httpx = "^0.28.1"
+pytest = "^8.3.4"
+respx = "^0.22.0"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests/*",
+]

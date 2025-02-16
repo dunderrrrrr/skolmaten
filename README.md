@@ -14,16 +14,15 @@ pip install skolmaten
 
 ## Usage
 
-If you want food menu information for `https://skolmaten.se/atlas-skolan/`, use `SchoolFood` like this.
-
 Provide `year` and `week` as parameters to `at`.
 
 ```py
 >>> from Skolmaten import SchoolFood
->>> food = SchoolFood(school="atlas-skolan")
+>>> food = SchoolFood(school="0b4d4d77-7b27-4591-a03e-28309e039b1e")
 >>> food.at(2025, 10) # returns skolmaten json data
 ```
 
+You school `id` can be found in the URL of the school's page on skolmaten.se. For example, the school with id `0b4d4d77-7b27-4591-a03e-28309e039b1e` has the URL `https://skolmaten.se/menu/fbcb1b38-978c-42b9-a1ef-71798654e1d9?school=0b4d4d77-7b27-4591-a03e-28309e039b1e`.
 
 # License
 This package is not in any way related to the makers of skolmaten.se and is licensed under the `WTFPL` license.

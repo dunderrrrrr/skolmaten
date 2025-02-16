@@ -27,7 +27,9 @@ class SkolmatenAPI:
     def get(self, endpoint: str) -> dict:
         try:
             response = httpx.get(
-                f"{SKOLMATEN_BASE_URL}/{endpoint}", headers=self.headers
+                f"{SKOLMATEN_BASE_URL}/{endpoint}",
+                headers=self.headers,
+                timeout=10.0,
             )
             response.raise_for_status()
         except Exception as E:

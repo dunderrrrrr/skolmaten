@@ -17,7 +17,7 @@ pip install skolmaten
 Provide `year` and `week` as parameters to `at`.
 
 ```py
->>> from Skolmaten import SchoolFood
+>>> from skolmaten import SchoolFood
 >>> food = SchoolFood(school="0b4d4d77-7b27-4591-a03e-28309e039b1e")
 >>> food.at(2025, 10) # returns skolmaten json data
 ```
